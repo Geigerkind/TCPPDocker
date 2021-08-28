@@ -1,5 +1,5 @@
 echo "Waiting for eventual lock..."
-sleep 2s
+sleep 5s
 
 while [[ -f "/auth/worldserver.lock" ]]; do
     echo "Waiting for copy to finish..."

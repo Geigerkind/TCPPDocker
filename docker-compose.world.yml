@@ -9,6 +9,7 @@ services:
         ports:
         - '1118:1118'
         - '8085:8085'
+        - '8086:8086'
 
 volumes:
     trinity_world:
