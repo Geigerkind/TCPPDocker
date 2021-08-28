@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+    trinity_builder:
+        build: ./builder
+        volumes:
+        - trinity_auth:/auth
+        - trinity_world:/world
+
+volumes:
+    trinity_auth:
+    trinity_world:

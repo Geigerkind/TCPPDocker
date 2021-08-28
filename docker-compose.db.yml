@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+    trinity_db:
+        build: ./database
+        volumes:
+        - trinity_db:/var/lib/mysql
+        environment:
+        - MYSQL_USER=trinity
+        - MYSQL_PASSWORD=trinity
+        - MYSQL_ROOT_PASSWORD=trinity
+        ports:
+        - '3306:3306'
+
+volumes:
+    trinity_db:

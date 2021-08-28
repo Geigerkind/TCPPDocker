@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+    trinity_auth:
+        build: ./auth
+        restart: always
+        volumes:
+        - trinity_auth:/auth
+        ports:
+        - '1119:1119'
+
+volumes:
+    trinity_auth:
